@@ -1,0 +1,95 @@
+@import './fonts';
+@import './colors';
+@import './mixins';
+@import './spacing';
+@import './borders';
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    max-width: $container-xl;
+    margin: 0 auto;
+    padding: 1rem;
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        max-width: 576px;
+
+        h1 {
+            font-size: 2.8rem;
+            color: $green-heavy;
+            margin-bottom: $gap-2;
+        }
+
+        p {
+            font-size: 1rem;
+            color: $gray-dark;
+            margin-bottom: $gap-3;
+        }
+
+        .cta-group {
+            display: flex;
+            flex-direction: row;
+
+            .btn-primary {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0.7rem 1.8rem;
+                position: relative;
+                border-radius: $border-r-2;
+                background: $green;
+                color: $white;
+                margin-right: $gap-2;
+                font-size: 1.2rem;
+                min-width: 180px;
+                transition: 0.7s ease-in-out;
+
+                &:hover {
+                    background: $green-dark;
+                }
+            }
+
+            .btn-secondary {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0.7rem 1.8rem;
+                position: relative;
+                border-radius: $border-r-2;
+                background: transparent;
+                border: 2px solid $green;
+                color: $green;
+                margin-right: $gap-2;
+                font-size: 1.2rem;
+                min-width: 180px;
+                transition: 0.7s ease-in-out;
+
+                &::after {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 0%;
+                    height: 100%;
+                    z-index: -1;
+                    background: $green-dark;
+                    border-radius: $border-r-1;
+                    transition: 0.7s ease-in-out;
+                }
+
+                &:hover {
+                    color: $white;
+                    &::after {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

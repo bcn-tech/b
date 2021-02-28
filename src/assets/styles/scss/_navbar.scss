@@ -1,0 +1,59 @@
+@import './fonts';
+@import './colors';
+@import './mixins';
+@import './spacing';
+@import './borders';
+
+header {
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: $container-xl;
+    margin: 0 auto;
+    padding: $gap-3 $gap-2 0;
+
+    .logo {
+        font-size: 2rem;
+        max-width: 90px;
+        color: $black;
+        font-weight: 600;
+        font-family: $poppins;
+
+        span {
+            color: $green;
+        }
+    }
+
+    .nav-menu {
+        display: flex;
+        align-items: center;
+
+        .nav-list {
+            display: flex;
+
+            li {
+                margin-right: $gap-4;
+            }
+        }
+
+        .signin {
+            .btn-signin {
+                background: $green;
+                font-size: 1rem;
+                font-weight: 600;
+                color: $white;
+                padding: $gap-1 $gap-3;
+                border-radius: $border-r-2;
+                transition: 0.7s ease-in-out;
+
+                &:hover {
+                    background: $green-dark;
+                }
+            }
+        }
+    }
+}
