@@ -6,9 +6,9 @@
       </div>
       <div class="nav-menu">
         <ul class="nav-list">
-          <li><a href="#">Serviços</a></li>
-          <li><a href="#">Clientes</a></li>
-          <li><a href="#">Contato</a></li>
+          <li><a href="#" class="nav-link">Serviços</a></li>
+          <li><a href="#" class="nav-link">Clientes</a></li>
+          <li><a href="#" class="nav-link">Contato</a></li>
         </ul>
         <div class="signin">
           <a href="#" class="btn-signin">Entrar</a>

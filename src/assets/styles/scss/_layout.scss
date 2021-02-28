@@ -8,6 +8,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     position: relative;
     max-width: $container-xl;
     margin: 0 auto;
@@ -19,10 +20,17 @@
         justify-content: flex-start;
         max-width: 576px;
 
-        h1 {
-            font-size: 2.8rem;
+        .title {
             color: $green-heavy;
             margin-bottom: $gap-2;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+        }
+
+        h2 {
+            font-size: 2rem;
         }
 
         p {

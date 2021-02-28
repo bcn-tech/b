@@ -37,6 +37,10 @@ header {
 
             li {
                 margin-right: $gap-4;
+
+                .nav-link {
+                    color: $white;
+                }
             }
         }
 
@@ -51,7 +55,7 @@ header {
                 transition: 0.7s ease-in-out;
 
                 &:hover {
-                    background: $green-dark;
+                    background: $green-heavy;
                 }
             }
         }
