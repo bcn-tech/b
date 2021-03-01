@@ -26,23 +26,3 @@ export default {
   },
 };
 </script>
-
-<style lang="scss">
-@import "../assets/styles/scss/mixins";
-
-.home {
-  max-width: $container-xl;
-  margin: 0 auto;
-  position: relative;
-}
-
-.circle {
-  img {
-    right: -15%;
-    top: -10%;
-    position: absolute;
-    max-width: 1000px;
-    z-index: -1;
-  }
-}
-</style>

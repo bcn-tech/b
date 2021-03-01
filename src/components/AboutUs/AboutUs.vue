@@ -32,11 +32,8 @@
       </div>
     </div>
     <div class="container">
-        <div class="image">
-        <img
-          src="../../assets/img/survey.png"
-          alt="Ideias no trabalho"
-        />
+      <div class="image">
+        <img src="../../assets/img/survey.png" alt="Ideias no trabalho" />
       </div>
       <div class="content">
         <h2 class="title">Comprometidos com os melhores resultados</h2>
@@ -54,15 +51,3 @@ export default {
   name: 'AboutUs',
 };
 </script>
-
-<style lang="scss">
-@import "../../assets/styles/scss/layout";
-
-#about-us {
-    .container {
-        .content {
-            max-width: 450px;
-        }
-    }
-}
-</style>

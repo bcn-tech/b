@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section id="hero">
     <div class="container">
       <div class="content">
         <h1 class="title">Desenvolvimento de software especializado</h1>
@@ -24,7 +24,3 @@ export default {
   name: 'Hero',
 };
 </script>
-
-<style lang="scss">
-@import '../../assets/styles/scss/layout';
-</style>

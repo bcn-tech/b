@@ -23,7 +23,3 @@ export default {
   name: 'Navbar',
 };
 </script>
-
-<style lang="scss">
-@import '../../assets/styles/scss/navbar';
-</style>

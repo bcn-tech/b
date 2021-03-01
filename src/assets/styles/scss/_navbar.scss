@@ -1,11 +1,8 @@
-@import './fonts';
-@import './colors';
-@import './mixins';
-@import './spacing';
-@import './borders';
+// Navbar
 
 header {
     width: 100%;
+    margin-top: 5vh;
 }
 
 .navbar {
@@ -14,7 +11,7 @@ header {
     align-items: center;
     max-width: $container-xl;
     margin: 0 auto;
-    padding: $gap-3 $gap-2 0;
+    padding: 0 $gap-2;
 
     .logo {
         font-size: 2rem;
@@ -40,6 +37,11 @@ header {
 
                 .nav-link {
                     color: $white;
+                    transition: 0.5s ease-in-out;
+
+                    &:hover {
+                        color: $green-heavy;
+                    }
                 }
             }
         }
