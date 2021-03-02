@@ -36,10 +36,10 @@
         <img src="../../assets/img/survey.png" alt="Ideias no trabalho" />
       </div>
       <div class="content">
-        <h2 class="title">Comprometidos com os melhores resultados</h2>
+        <h2 class="title">A satisfação dos nossos clientes é o que nos move</h2>
         <p class="subtitle">
-          Estamos sempre em busca de obter os melhores resultados possíveis para
-          os nossos clientes, assegurando a qualidade de nossos serviços.
+          Propor as soluções ideais para as necessidades dos nossos clientes é o
+          que almejamos, eles são o nossos foco.
         </p>
       </div>
     </div>

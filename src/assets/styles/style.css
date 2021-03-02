@@ -598,7 +598,7 @@ header {
   margin-bottom: 32px;
 }
 
-.container .content .cta-group {
+.container .cta-group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -608,33 +608,7 @@ header {
           flex-direction: row;
 }
 
-.container .content .cta-group .btn-primary {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0.7rem 1.8rem;
-  position: relative;
-  border-radius: 10px;
-  background: #06D6A0;
-  color: #FFFFFF;
-  margin-right: 16px;
-  font-size: 1.2rem;
-  min-width: 180px;
-  -webkit-transition: 0.7s ease-in-out;
-  transition: 0.7s ease-in-out;
-}
-
-.container .content .cta-group .btn-primary:hover {
-  background: #2A9D8F;
-}
-
-.container .content .cta-group .btn-secondary {
+.container .cta-group .btn-secondary {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -657,7 +631,7 @@ header {
   transition: 0.7s ease-in-out;
 }
 
-.container .content .cta-group .btn-secondary::after {
+.container .cta-group .btn-secondary::after {
   content: "";
   display: block;
   position: absolute;
@@ -672,12 +646,38 @@ header {
   transition: 0.7s ease-in-out;
 }
 
-.container .content .cta-group .btn-secondary:hover {
+.container .cta-group .btn-secondary:hover {
   color: #FFFFFF;
 }
 
-.container .content .cta-group .btn-secondary:hover::after {
+.container .cta-group .btn-secondary:hover::after {
   width: 101%;
+}
+
+.container .btn-primary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.7rem 1.8rem;
+  position: relative;
+  border-radius: 10px;
+  background: #06D6A0;
+  color: #FFFFFF;
+  margin-right: 16px;
+  font-size: 1.2rem;
+  min-width: 180px;
+  -webkit-transition: 0.7s ease-in-out;
+  transition: 0.7s ease-in-out;
+}
+
+.container .btn-primary:hover {
+  background: #2A9D8F;
 }
 
 .home {
@@ -748,5 +748,124 @@ header {
   border-bottom: 3px solid #06D6A0;
   border-right: 3px solid #06D6A0;
   border-radius: 2px;
+}
+
+#our-services .container,
+#prices .container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 5rem 1rem;
+}
+
+#our-services .container .heading h2,
+#prices .container .heading h2 {
+  font-size: 2rem;
+  color: #2A4747;
+  margin-bottom: 64px;
+  position: relative;
+}
+
+#our-services .container .heading h2::before,
+#prices .container .heading h2::before {
+  content: "";
+  position: absolute;
+  margin: 0 auto;
+  bottom: -50%;
+  left: 0;
+  right: 0;
+  width: 50px;
+  border-bottom: 3px solid #06D6A0;
+  height: 10px;
+}
+
+#our-services .container .cards-grid,
+#our-services .container .cards-prices,
+#prices .container .cards-grid,
+#prices .container .cards-prices {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -webkit-column-gap: 64px;
+          column-gap: 64px;
+}
+
+#our-services .container .cards-grid .card,
+#our-services .container .cards-prices .card,
+#prices .container .cards-grid .card,
+#prices .container .cards-prices .card {
+  max-width: 350px;
+  padding: 2rem;
+  border-radius: 20px;
+  -webkit-box-shadow: -4px 4px 25px rgba(6, 214, 160, 0.25);
+          box-shadow: -4px 4px 25px rgba(6, 214, 160, 0.25);
+}
+
+#our-services .container .cards-grid .card img,
+#our-services .container .cards-prices .card img,
+#prices .container .cards-grid .card img,
+#prices .container .cards-prices .card img {
+  max-width: 100px;
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+
+#our-services .container .cards-grid .card img.performance, #our-services .container .cards-grid .card img.seo,
+#our-services .container .cards-prices .card img.performance,
+#our-services .container .cards-prices .card img.seo,
+#prices .container .cards-grid .card img.performance,
+#prices .container .cards-grid .card img.seo,
+#prices .container .cards-prices .card img.performance,
+#prices .container .cards-prices .card img.seo {
+  max-width: 66px !important;
+}
+
+#our-services .container .cards-grid .card h3,
+#our-services .container .cards-prices .card h3,
+#prices .container .cards-grid .card h3,
+#prices .container .cards-prices .card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 16px;
+  color: #06D6A0;
+}
+
+#prices .cards-prices {
+  width: 88%;
+}
+
+#prices .cards-prices .card {
+  width: 100%;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+#prices .cards-prices .card:nth-child(2) {
+  background: #06D6A0;
+}
+
+#prices h3 {
+  color: #000000 !important;
+  text-align: center;
+  font-size: 1.5rem !important;
+}
+
+#prices h4 {
+  color: #06D6A0;
+  font-weight: bold;
+  font-size: 1.8rem;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+#prices ul {
+  margin: 32px 0;
+}
+
+#prices ul li {
+  margin-bottom: 16px;
+  color: #999999;
 }
 /*# sourceMappingURL=style.css.map */

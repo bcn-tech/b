@@ -7,6 +7,8 @@
     <Navbar />
     <Hero />
     <AboutUs />
+    <Services />
+    <Prices />
   </div>
 </template>
 
@@ -16,6 +18,8 @@
 import Navbar from '@/components/Navigation/Navbar.vue';
 import Hero from '@/components/Hero/Hero.vue';
 import AboutUs from '@/components/AboutUs/AboutUs.vue';
+import Services from '@/components/OurServices/Services.vue';
+import Prices from '@/components/Prices/Prices.vue';
 
 export default {
   name: 'Home',
@@ -23,6 +27,8 @@ export default {
     Navbar,
     Hero,
     AboutUs,
+    Services,
+    Prices,
   },
 };
 </script>
