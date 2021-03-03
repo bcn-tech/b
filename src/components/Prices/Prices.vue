@@ -34,7 +34,7 @@
             <li>5 páginas no máximo</li>
             <li>Suporte 12 horas p/dia</li>
           </ul>
-          <a href="#" class="btn-primary">Contratar</a>
+          <a href="#" class="btn-heavy">Contratar</a>
         </div>
 
         <div class="card">

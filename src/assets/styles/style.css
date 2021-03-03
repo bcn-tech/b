@@ -680,6 +680,32 @@ header {
   background: #2A9D8F;
 }
 
+.container .btn-heavy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.7rem 1.8rem;
+  position: relative;
+  border-radius: 10px;
+  background: #2A4747;
+  color: #FFFFFF;
+  margin-right: 16px;
+  font-size: 1.2rem;
+  min-width: 180px;
+  -webkit-transition: 0.7s ease-in-out;
+  transition: 0.7s ease-in-out;
+}
+
+.container .btn-heavy:hover {
+  background: #2A9D8F;
+}
+
 .home {
   max-width: 1440px;
   margin: 0 auto;
@@ -751,7 +777,8 @@ header {
 }
 
 #our-services .container,
-#prices .container {
+#prices .container,
+#testimonials .container {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -760,7 +787,8 @@ header {
 }
 
 #our-services .container .heading h2,
-#prices .container .heading h2 {
+#prices .container .heading h2,
+#testimonials .container .heading h2 {
   font-size: 2rem;
   color: #2A4747;
   margin-bottom: 64px;
@@ -768,7 +796,8 @@ header {
 }
 
 #our-services .container .heading h2::before,
-#prices .container .heading h2::before {
+#prices .container .heading h2::before,
+#testimonials .container .heading h2::before {
   content: "";
   position: absolute;
   margin: 0 auto;
@@ -783,7 +812,9 @@ header {
 #our-services .container .cards-grid,
 #our-services .container .cards-prices,
 #prices .container .cards-grid,
-#prices .container .cards-prices {
+#prices .container .cards-prices,
+#testimonials .container .cards-grid,
+#testimonials .container .cards-prices {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
@@ -795,7 +826,9 @@ header {
 #our-services .container .cards-grid .card,
 #our-services .container .cards-prices .card,
 #prices .container .cards-grid .card,
-#prices .container .cards-prices .card {
+#prices .container .cards-prices .card,
+#testimonials .container .cards-grid .card,
+#testimonials .container .cards-prices .card {
   max-width: 350px;
   padding: 2rem;
   border-radius: 20px;
@@ -806,7 +839,9 @@ header {
 #our-services .container .cards-grid .card img,
 #our-services .container .cards-prices .card img,
 #prices .container .cards-grid .card img,
-#prices .container .cards-prices .card img {
+#prices .container .cards-prices .card img,
+#testimonials .container .cards-grid .card img,
+#testimonials .container .cards-prices .card img {
   max-width: 100px;
   margin: 0 auto;
   margin-bottom: 32px;
@@ -818,14 +853,20 @@ header {
 #prices .container .cards-grid .card img.performance,
 #prices .container .cards-grid .card img.seo,
 #prices .container .cards-prices .card img.performance,
-#prices .container .cards-prices .card img.seo {
+#prices .container .cards-prices .card img.seo,
+#testimonials .container .cards-grid .card img.performance,
+#testimonials .container .cards-grid .card img.seo,
+#testimonials .container .cards-prices .card img.performance,
+#testimonials .container .cards-prices .card img.seo {
   max-width: 66px !important;
 }
 
 #our-services .container .cards-grid .card h3,
 #our-services .container .cards-prices .card h3,
 #prices .container .cards-grid .card h3,
-#prices .container .cards-prices .card h3 {
+#prices .container .cards-prices .card h3,
+#testimonials .container .cards-grid .card h3,
+#testimonials .container .cards-prices .card h3 {
   font-size: 1.3rem;
   margin-bottom: 16px;
   color: #06D6A0;
@@ -839,10 +880,22 @@ header {
   width: 100%;
   -ms-grid-column-align: center;
       justify-self: center;
+  margin-top: 32px;
 }
 
 #prices .cards-prices .card:nth-child(2) {
   background: #06D6A0;
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+}
+
+#prices .cards-prices .card:nth-child(2) h3,
+#prices .cards-prices .card:nth-child(2) h4 {
+  color: #FFFFFF !important;
+}
+
+#prices .cards-prices .card:nth-child(2) ul li {
+  color: #EAE8FF;
 }
 
 #prices h3 {
@@ -867,5 +920,36 @@ header {
 #prices ul li {
   margin-bottom: 16px;
   color: #999999;
+}
+
+.swiper-container {
+  padding: 1rem;
+}
+
+.swiper-container .swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.swiper .card {
+  -webkit-box-shadow: -4px 4px 25px rgba(6, 214, 160, 0.25);
+          box-shadow: -4px 4px 25px rgba(6, 214, 160, 0.25);
+  border-radius: 15px;
+  padding: 2rem;
+  max-width: 350px;
+}
+
+.swiper .card img {
+  max-width: 100px;
+  margin: 0 auto;
+}
+
+.swiper .card h3 {
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 /*# sourceMappingURL=style.css.map */

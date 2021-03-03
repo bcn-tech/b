@@ -9,6 +9,7 @@
     <AboutUs />
     <Services />
     <Prices />
+    <Testimonials />
   </div>
 </template>
 
@@ -20,6 +21,7 @@ import Hero from '@/components/Hero/Hero.vue';
 import AboutUs from '@/components/AboutUs/AboutUs.vue';
 import Services from '@/components/OurServices/Services.vue';
 import Prices from '@/components/Prices/Prices.vue';
+import Testimonials from '@/components/Testimonials/Testimonials.vue';
 
 export default {
   name: 'Home',
@@ -29,6 +31,7 @@ export default {
     AboutUs,
     Services,
     Prices,
+    Testimonials,
   },
 };
 </script>

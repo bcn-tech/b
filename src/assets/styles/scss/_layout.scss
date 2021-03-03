@@ -97,6 +97,25 @@
             background: $green-dark;
         }
     }
+
+    .btn-heavy {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.7rem 1.8rem;
+        position: relative;
+        border-radius: $border-r-2;
+        background: $green-heavy;
+        color: $white;
+        margin-right: $gap-2;
+        font-size: 1.2rem;
+        min-width: 180px;
+        transition: 0.7s ease-in-out;
+
+        &:hover {
+            background: $green-dark;
+        }
+    }
 }
 
 // Home view
@@ -176,7 +195,8 @@
 }
 
 #our-services,
-#prices {
+#prices,
+#testimonials {
     .container {
         flex-direction: column;
         padding: 5rem 1rem;
@@ -242,9 +262,22 @@
         .card {
             width: 100%;
             justify-self: center;
+            margin-top: $gap-3;
 
             &:nth-child(2) {
                 background: $green;
+                transform: scale(1.15);
+
+                h3,
+                h4 {
+                    color: $white !important;
+                }
+
+                ul {
+                    li {
+                        color: $gray;
+                    }
+                }
             }
         }
     }
@@ -270,6 +303,34 @@
         li {
             margin-bottom: $gap-2;
             color: $gray-dark;
+        }
+    }
+}
+
+.swiper-container {
+    padding: 1rem;
+
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.swiper {
+    .card {
+        box-shadow: -4px 4px 25px rgba(6, 214, 160, 0.25);
+        border-radius: $border-r-3;
+        padding: 2rem;
+        max-width: 350px;
+
+        img {
+            max-width: 100px;
+            margin: 0 auto;
+        }
+
+        h3 {
+            margin-top: $gap-2;
+            margin-bottom: $gap-2;
         }
     }
 }
