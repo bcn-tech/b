@@ -10,6 +10,7 @@
     <Services />
     <Prices />
     <Testimonials />
+    <Contact />
   </div>
 </template>
 
@@ -22,6 +23,7 @@ import AboutUs from '@/components/AboutUs/AboutUs.vue';
 import Services from '@/components/OurServices/Services.vue';
 import Prices from '@/components/Prices/Prices.vue';
 import Testimonials from '@/components/Testimonials/Testimonials.vue';
+import Contact from '@/components/Contact/Contact.vue';
 
 export default {
   name: 'Home',
@@ -32,6 +34,7 @@ export default {
     Services,
     Prices,
     Testimonials,
+    Contact,
   },
 };
 </script>

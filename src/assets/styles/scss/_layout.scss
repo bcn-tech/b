@@ -8,33 +8,7 @@
     position: relative;
     max-width: $container-xl;
     margin: 0 auto;
-    padding: 1rem;
-
-    .content {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        max-width: 576px;
-
-        .title {
-            color: $green-heavy;
-            margin-bottom: $gap-2;
-        }
-
-        h1 {
-            font-size: 2.8rem;
-        }
-
-        h2 {
-            font-size: 2rem;
-        }
-
-        p {
-            font-size: 1rem;
-            color: $gray-dark;
-            margin-bottom: $gap-3;
-        }
-    }
+    padding: 0 3vw;
 
     .cta-group {
         display: flex;
@@ -54,6 +28,8 @@
             font-size: 1.2rem;
             min-width: 180px;
             transition: 0.7s ease-in-out;
+            box-sizing: border-box;
+            box-shadow: -4px 4px 25px rgba(6, 214, 160, 0.15);
 
             &::after {
                 content: "";
@@ -73,7 +49,7 @@
                 color: $white;
 
                 &::after {
-                    width: 101%;
+                    width: 102%;
                 }
             }
         }
@@ -92,6 +68,7 @@
         font-size: 1.2rem;
         min-width: 180px;
         transition: 0.7s ease-in-out;
+        box-shadow: -4px 4px 20px rgba(42, 157, 143, 0.25);
 
         &:hover {
             background: $green-dark;
@@ -118,6 +95,37 @@
     }
 }
 
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 576px;
+
+    .title {
+        color: $green-heavy;
+        margin-bottom: $gap-2;
+    }
+
+    h1 {
+        font-size: 2.8rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+        color: $gray-dark;
+        margin-bottom: $gap-3;
+    }
+}
+
+.row {
+    flex-direction: row;
+    width: 100%;
+}
+
 // Home view
 
 .home {
@@ -128,8 +136,8 @@
 
 .circle {
     img {
-        top: -10%;
-        right: -15%;
+        top: -20vh;
+        right: -17vw;
         position: absolute;
         max-width: 1000px;
         z-index: -1;
@@ -201,27 +209,6 @@
         flex-direction: column;
         padding: 5rem 1rem;
 
-        .heading {
-            h2 {
-                font-size: 2rem;
-                color: $green-heavy;
-                margin-bottom: $gap-4;
-                position: relative;
-
-                &::before {
-                    content: "";
-                    position: absolute;
-                    margin: 0 auto;
-                    bottom: -50%;
-                    left: 0;
-                    right: 0;
-                    width: 50px;
-                    border-bottom: 3px solid $green;
-                    height: 10px;
-                }
-            }
-        }
-
         .cards-grid,
         .cards-prices {
             display: grid;
@@ -251,6 +238,27 @@
                     color: $green;
                 }
             }
+        }
+    }
+}
+
+.heading {
+    h2 {
+        font-size: 2rem;
+        color: $green-heavy;
+        margin-bottom: $gap-4;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            margin: 0 auto;
+            bottom: -50%;
+            left: 0;
+            right: 0;
+            width: 50px;
+            border-bottom: 3px solid $green;
+            height: 10px;
         }
     }
 }
@@ -307,8 +315,14 @@
     }
 }
 
+#testimonials {
+    .container {
+        padding: 5rem 0 0;
+    }
+}
+
 .swiper-container {
-    padding: 1rem;
+    padding: 1rem 1rem 2rem;
 
     .swiper-slide {
         display: flex;

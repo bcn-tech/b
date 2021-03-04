@@ -2,7 +2,6 @@
 
 header {
     width: 100%;
-    margin-top: 5vh;
 }
 
 .navbar {
@@ -11,7 +10,7 @@ header {
     align-items: center;
     max-width: $container-xl;
     margin: 0 auto;
-    padding: 0 $gap-2;
+    padding: 5vh 3vw;
 
     .logo {
         font-size: 2rem;
