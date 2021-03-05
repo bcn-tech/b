@@ -544,6 +544,48 @@ header {
   background: #2A4747;
 }
 
+.swiper .card {
+  -webkit-box-shadow: -4px 4px 25px rgba(6, 214, 160, 0.25);
+          box-shadow: -4px 4px 25px rgba(6, 214, 160, 0.25);
+  border-radius: 15px;
+  padding: 2rem;
+  max-width: 350px;
+}
+
+.swiper .card img {
+  max-width: 100px;
+}
+
+.swiper .card .avatar {
+  margin: 0 auto;
+}
+
+.swiper .card h3 {
+  color: #06D6A0;
+  font-size: 1.3rem;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.swiper .card p {
+  color: #2A4747;
+}
+
+.swiper-button-next:after,
+.swiper-container-rtl .swiper-button-prev:after,
+.swiper-button-prev:after,
+.swiper-container-rtl .swiper-button-next:after {
+  content: none;
+}
+
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+  left: 2%;
+}
+
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+  right: 2%;
+}
+
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -864,6 +906,7 @@ header {
 
 .heading h2 {
   font-size: 2rem;
+  text-align: center;
   color: #2A4747;
   margin-bottom: 64px;
   position: relative;
@@ -936,7 +979,7 @@ header {
 }
 
 .swiper-container {
-  padding: 1rem 1rem 2rem;
+  padding: 1rem 2rem 2rem;
 }
 
 .swiper-container .swiper-slide {
@@ -946,23 +989,5 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.swiper .card {
-  -webkit-box-shadow: -4px 4px 25px rgba(6, 214, 160, 0.25);
-          box-shadow: -4px 4px 25px rgba(6, 214, 160, 0.25);
-  border-radius: 15px;
-  padding: 2rem;
-  max-width: 350px;
-}
-
-.swiper .card img {
-  max-width: 100px;
-  margin: 0 auto;
-}
-
-.swiper .card h3 {
-  margin-top: 16px;
-  margin-bottom: 16px;
 }
 /*# sourceMappingURL=style.css.map */

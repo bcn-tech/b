@@ -1,9 +1,9 @@
 <template>
   <section id="contact">
-    <div class="container">
       <div class="heading">
         <h2>Contato</h2>
       </div>
+    <div class="container">
       <div class="content">
         <div class="card">
           <p>

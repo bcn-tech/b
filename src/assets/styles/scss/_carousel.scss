@@ -1,0 +1,42 @@
+.swiper {
+    .card {
+        box-shadow: -4px 4px 25px rgba(6, 214, 160, 0.25);
+        border-radius: $border-r-3;
+        padding: 2rem;
+        max-width: 350px;
+
+        img {
+            max-width: 100px;
+        }
+
+        .avatar {
+            margin: 0 auto;
+        }
+
+        h3 {
+            color: $green;
+            font-size: 1.3rem;
+            margin-top: $gap-2;
+            margin-bottom: $gap-2;
+        }
+
+        p {
+            color: $green-heavy;
+        }
+    }
+}
+
+.swiper-button-next:after,
+.swiper-container-rtl .swiper-button-prev:after,
+.swiper-button-prev:after,
+.swiper-container-rtl .swiper-button-next:after {
+    content: none;
+}
+
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+    left: 2%;
+}
+
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+    right: 2%;
+}
